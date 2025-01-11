@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horarios - El Gato Gordo</title>
+    <link rel="stylesheet" href="horarios.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="menu-icon" onclick="toggleMenu()">
+                ☰
+            </div>
+            <ul id="menu" class="hidden">
+                <li><a class="button" href="index.html">Inicio</a></li>
+                <li><a class="button" href="ubicacion.html">Ubicación</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="horarios">
+        <h2>Horarios de Atención</h2>
+        <div class="card">
+            <div class="tools">
+                <div class="circle">
+                    <span class="red box"></span>
+                </div>
+                <div class="circle">
+                    <span class="yellow box"></span>
+                </div>
+                <div class="circle">
+                    <span class="green box"></span>
+                </div>
+            </div>
+            <div class="card__content">
+                <ul>
+                    <li><span>🕓</span> Viernes: 6:00pm - 10:00pm</li>
+                    <li><span>🕓</span> Sábado: 6:00pm - 10:00pm</li>
+                    <li><span>🕓</span> Domingo: 5:00pm - 10:00pm</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 El Gato Gordo. Todos los derechos reservados.</p>
+        <div class="contactos">
+            <a href="https://wa.me/2761038397" target="_blank">WhatsApp</a>
+            <a href="https://www.facebook.com/profile.php?id=61558368113060" target="_blank">Facebook</a>
+        </div>
+    </footer>
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById("menu");
+            menu.classList.toggle("hidden");
+        }
+    </script>
+</body>
+</html>

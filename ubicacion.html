@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ubicación - El Gato Gordo</title>
+    <link rel="stylesheet" href="ubicacion.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="menu-icon" onclick="toggleMenu()">
+                ☰
+            </div>
+            <ul id="menu" class="hidden">
+                <li><a class="button" href="index.html">Inicio</a></li>
+                <li><a class="button" href="horarios.html">Horarios</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="ubicacion">
+        <h2>Ubicación Gatuna</h2>
+        <div class="map-container">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d941.8138879015127!2d-97.80250573051386!3d19.22769126517033!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTnCsDEzJzM5LjciTiA5N8KwNDgnMDYuNyJX!5e0!3m2!1ses!2smx!4v1736620092252!5m2!1ses!2smx" 
+                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 El Gato Gordo. Todos los derechos reservados.</p>
+        <div class="contactos">
+            <a href="https://wa.me/2761038397" target="_blank">WhatsApp</a>
+            <a href="https://www.facebook.com/profile.php?id=61558368113060" target="_blank">Facebook</a>
+        </div>
+    </footer>
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById("menu");
+            menu.classList.toggle("hidden");
+        }
+    </script>
+</body>
+</html>

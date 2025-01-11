@@ -1,0 +1,182 @@
+/* Estilo global */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #121212;
+    color: #E0E0E0;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #BB86FC;
+}
+
+a {
+    text-decoration: none;
+    color: #BB86FC;
+}
+
+a:hover {
+    color: #3700B3;
+}
+
+/* Estilo del encabezado */
+header {
+    background-color: #1F1B24;
+    padding: 20px;
+    color: #E0E0E0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.menu-icon {
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+#menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 15px;
+}
+
+#menu li {
+    border: none;
+}
+
+#menu li .button {
+    display: block;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    color: #E0E0E0;
+}
+
+#menu li .button:hover {
+    background-color: #3700B3;
+    color: #ffffff;
+    transform: scale(1.1);
+    outline: 2px solid #70bdca;
+    box-shadow: 4px 5px 17px -4px #268391;
+}
+
+@media (max-width: 768px) {
+    #menu {
+        flex-direction: column;
+        display: none;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    #menu.show {
+        display: flex;
+    }
+}
+
+/* Estilo de botones elegante y futurista */
+.button {
+  padding: 1em 2em;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: #2c9caf;
+  transition: all 1000ms;
+  font-size: 15px;
+  position: relative;
+  overflow: hidden;
+  outline: 2px solid #2c9caf;
+}
+
+.button:hover {
+  color: #ffffff;
+  transform: scale(1.1);
+  outline: 2px solid #70bdca;
+  box-shadow: 4px 5px 17px -4px #268391;
+}
+
+.button::before {
+  content: "";
+  position: absolute;
+  left: -50px;
+  top: 0;
+  width: 0;
+  height: 100%;
+  background-color: #2c9caf;
+  transform: skewX(45deg);
+  z-index: -1;
+  transition: width 1000ms;
+}
+
+.button:hover::before {
+  width: 250%;
+}
+
+/* Estilo para la sección de ubicación */
+#ubicacion {
+    padding: 40px 20px;
+    text-align: center;
+    background: #1F1B24;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    margin: 20px;
+}
+
+#ubicacion h2 {
+    color: #BB86FC;
+    margin-bottom: 20px;
+}
+
+.map-container {
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+    position: relative;
+}
+
+.map-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+/* Estilo para los enlaces de contacto en el pie de página */
+footer {
+    background-color: #1F1B24;
+    color: #E0E0E0;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+
+footer .contactos a {
+    margin: 0 10px;
+    color: #BB86FC;
+    font-size: 1.2rem;
+}
+
+footer .contactos a:hover {
+    text-decoration: underline;
+}
